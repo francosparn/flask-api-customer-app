@@ -212,6 +212,5 @@ def index():
 def public_files(path):
     return render_template(path)
 
-
 if __name__ == '__main__':
     app.run(None, 3000, True)
