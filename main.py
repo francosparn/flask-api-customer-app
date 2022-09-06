@@ -9,9 +9,9 @@ cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
 # MySQL connection
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'leon1889'
+app.config['MYSQL_HOST'] = ''
+app.config['MYSQL_USER'] = ''
+app.config['MYSQL_PASSWORD'] = ''
 app.config['MYSQL_DB'] = 'api_flask'
 
 mysql = MySQL(app)
