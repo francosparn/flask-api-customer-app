@@ -1,6 +1,25 @@
-# python-customer-app
+# Customer Management Application
 
-**CRUD-type customer management application**. It is possible to **create**, **view**, **update** and **delete customers**. This application in its back end uses a **REST API** developed in **Python** with **Flask**. The front end was developed with **HTML**, **CSS**, **Bootstrap v5**, and **native JavaScript**. The database manager used for this project was **MySQL**.
+**Project features**:
+
+- Create customers.
+- Edit customers.
+- Delete customers.
+- View customers.
+- View the total number of registered customers.
+- Display the first name and last name of the last registered customer.
+- View the total number of active customers.
+- View the total number of inactive customers.
+
+It uses a **REST API** developed in **Python** with the **Flask** framework.
+
+**HTML**, **CSS** and **Bootstrap v5** were used for the structure and design of the application.
+
+The programming language used to consume the **REST API** and display the data on the screen is native **JavaScript**.
+
+The database manager used is **MySQL**.
+
+For the alerts, the **SweetAlert2** library was used.
 
 # Index
 
