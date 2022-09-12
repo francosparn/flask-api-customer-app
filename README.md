@@ -10,6 +10,7 @@
 - Display the first name and last name of the last registered customer.
 - View the total number of active customers.
 - View the total number of inactive customers.
+- Search filter for active and inactive customers.
 
 It uses a **REST API** developed in **Python** with the **Flask** framework.
 
