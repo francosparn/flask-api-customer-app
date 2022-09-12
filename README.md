@@ -11,6 +11,7 @@
 - View the total number of active customers.
 - View the total number of inactive customers.
 - Search filter for active and inactive customers.
+- Form validation.
 
 It uses a **REST API** developed in **Python** with the **Flask** framework.
 
