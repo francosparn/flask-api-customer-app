@@ -20,7 +20,7 @@ The programming language used to consume the **REST API** and display the data o
 
 The database manager used is **MySQL**.
 
-For the alerts, the **[SweelAlert2](https://sweetalert2.github.io/)** library was used.
+For the alerts, the **[SweetAlert2](https://sweetalert2.github.io/)** library was used.
 
 For the animations, the **[Animate.css](https://animate.style/)** library was used.
 
