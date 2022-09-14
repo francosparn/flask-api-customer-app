@@ -12,7 +12,7 @@
 - View the total number of inactive customers.
 - Search filter for active and inactive customers.
 - Basic form validations.
-- Personalized alerts on the status of a customer
+- Personalized alerts on the status of a customer.
 
 It uses a **REST API** developed in **Python** with the **Flask** framework.
 
