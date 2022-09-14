@@ -29,12 +29,22 @@ For the animations, the **[Animate.css](https://animate.style/)** library was us
 
 # Preview
 
+**Index**
+
 ![](https://i.imgur.com/ipTrnvC.png)
+
+**Customer creation form**
 
 ![](https://i.imgur.com/8Er7exl.png)
 
+**Customer edition form**
+
 ![](https://i.imgur.com/BqHv2AE.png)
 
+**Customer Profile View Screen**
+
 ![](https://i.imgur.com/UOySu7v.png)
+
+**Search filter by state**
 
 ![](https://i.imgur.com/ZQJ6Alt.png)
