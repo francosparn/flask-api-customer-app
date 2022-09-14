@@ -27,22 +27,14 @@ For the alerts, the **[SweetAlert2](https://sweetalert2.github.io/)** library wa
 
 For the animations, the **[Animate.css](https://animate.style/)** library was used.
 
-# Index
+# Preview
 
 ![](https://i.imgur.com/ipTrnvC.png)
 
-# Customer add form
-
 ![](https://i.imgur.com/8Er7exl.png)
-
-# Customer edit form
 
 ![](https://i.imgur.com/BqHv2AE.png)
 
-# Customer Profile
-
 ![](https://i.imgur.com/UOySu7v.png)
-
-# Customer filter by state
 
 ![](https://i.imgur.com/ZQJ6Alt.png)
