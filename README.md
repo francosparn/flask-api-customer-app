@@ -13,6 +13,7 @@
 - Search filter for active and inactive customers.
 - Basic form validations.
 - Personalized alerts on the status of a customer.
+- Custom alert messages for customer creation, deletion and editing.
 
 It uses a **REST API** developed in **Python** with the **Flask** framework.
 
