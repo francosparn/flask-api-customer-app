@@ -27,16 +27,20 @@ For the animations, the **[Animate.css](https://animate.style/)** library was us
 
 # Index
 
-![](https://i.imgur.com/O8yfCFl.png)
+![](https://i.imgur.com/ZQJ6Alt.png)
 
 # Customer add form
 
-![](https://i.imgur.com/DsiwUb0.png)
+![](https://i.imgur.com/8Er7exl.png)
 
 # Customer edit form
 
-![](https://i.imgur.com/COru1yE.png)
+![](https://i.imgur.com/BqHv2AE.png)
 
 # Customer Profile
 
-![](https://i.imgur.com/x4TG4Ze.png)
+![](https://i.imgur.com/UOySu7v.png)
+
+# Customer filter by state
+
+![](https://i.imgur.com/ZQJ6Alt.png)
