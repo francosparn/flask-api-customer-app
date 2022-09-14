@@ -27,7 +27,7 @@ For the animations, the **[Animate.css](https://animate.style/)** library was us
 
 # Index
 
-![](https://i.imgur.com/ZQJ6Alt.png)
+![](https://i.imgur.com/ipTrnvC.png)
 
 # Customer add form
 
