@@ -14,7 +14,7 @@
 - Basic form validations.
 - Personalized alerts on the status of a customer.
 - Custom alert messages for customer creation, deletion and editing.
-- Customer table export to Excel.
+- Customers table export to Excel.
 
 It uses a **REST API** developed in **Python** with the **Flask** framework.
 
@@ -27,6 +27,8 @@ The database manager used is **MySQL**.
 For the alerts, the **[SweetAlert2](https://sweetalert2.github.io/)** library was used.
 
 For the animations, the **[Animate.css](https://animate.style/)** library was used.
+
+To export customers data to Excel, a library called **[Table2Excel](https://github.com/rusty1s/table2excel)** was used.
 
 # Preview
 
