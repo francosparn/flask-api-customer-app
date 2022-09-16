@@ -14,6 +14,7 @@
 - Basic form validations.
 - Personalized alerts on the status of a customer.
 - Custom alert messages for customer creation, deletion and editing.
+- Customer table export to Excel.
 
 It uses a **REST API** developed in **Python** with the **Flask** framework.
 
