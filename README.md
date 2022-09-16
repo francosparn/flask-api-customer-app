@@ -34,7 +34,7 @@ To export customers data to Excel, a library called **[Table2Excel](https://gith
 
 **Index**
 
-![](https://i.imgur.com/ipTrnvC.png)
+![](https://i.imgur.com/VElyLK4.png)
 
 **Customer creation form**
 
