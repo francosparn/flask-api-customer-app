@@ -35,7 +35,7 @@ CREATE TABLE `customers` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `email` (`email`),
   UNIQUE KEY `passport` (`passport`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -44,7 +44,7 @@ CREATE TABLE `customers` (
 
 LOCK TABLES `customers` WRITE;
 /*!40000 ALTER TABLE `customers` DISABLE KEYS */;
-INSERT INTO `customers` VALUES (1,'Lucas','Smith','lsmith@mail.com','2410576189','RH3OC1','Male','Folsom St 323','Active'),(2,'Peter','Johnson','pjohnson@mail.com','1912372896','UJIF36','Male','Michigan Ave 1234','Active'),(3,'Kim','Brown','kbrown@mail.com','1053409196','SDGB5X','Female','Eagle St 948','Active'),(4,'Reggie','Miller','rmiller@mail.com','1243472896','9TX4H7','Female','Hubbard St 473','Active'),(5,'Laura','Johnson','ljohnson@mail.com','1053472896','4D3BOE','Female','Verona St 3972','Inactive'),(6,'Thomas','Rodriguez','trodriguez@mail.com','3253472846','TX713C','Male','Ayers Ave 21','Active'),(7,'Harry','Taylor','htaylor@mail.com','2153472896','ZQN0KE','Male','Quinn St 381','Active'),(8,'Lucas','Jackson','ljackson@mail.com','1053443196','J70GU6','Male','Rosario St 2831','Active'),(9,'Samuel','White','swhite@mail.com','1053272896','YV1XSE','Male','Vinevale Ave 523','Inactive'),(10,'Sara','Martin','smartin@mail.com','1053472123','4TCU1J','Female','Folsom St 3210','Active');
+INSERT INTO `customers` VALUES (33,'Lucas','Smith','lsmith@mail.com','2410576189','RH3OC1','Male','Folsom St 323','Active'),(34,'Peter','Johnson','pjohnson@mail.com','1912372896','UJIF36','Male','Michigan Ave 1234','Active'),(35,'Kim','Brown','kbrown@mail.com','1053409196','SDGB5X','Female','Eagle St 948','Active'),(36,'Reggie','Miller','rmiller@mail.com','1243472896','9TX4H7','Female','Hubbard St 473','Active'),(37,'Laura','Johnson','ljohnson@mail.com','1053472896','4D3BOE','Female','Verona St 3972','Inactive'),(38,'Thomas','Rodriguez','trodriguez@mail.com','3253472846','TX713C','Male','Ayers Ave 21','Active'),(39,'Harry','Taylor','htaylor@mail.com','2153472896','ZQN0KE','Male','Quinn St 381','Active'),(40,'Lucas','Jackson','ljackson@mail.com','1053443196','J70GU6','Male','Rosario St 2831','Active'),(41,'Samuel','White','swhite@mail.com','1053272896','YV1XSE','Male','Vinevale Ave 523','Inactive'),(42,'Sara','Martin','smartin@mail.com','1053472123','4TCU1J','Female','Folsom St 3210','Active');
 /*!40000 ALTER TABLE `customers` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -57,4 +57,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-09-06 20:55:46
+-- Dump completed on 2022-09-17  0:56:20
