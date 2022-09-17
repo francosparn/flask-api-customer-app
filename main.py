@@ -9,14 +9,14 @@ cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
 # MySQL connection
-app.config['MYSQL_HOST'] = ''
-app.config['MYSQL_USER'] = ''
-app.config['MYSQL_PASSWORD'] = ''
-app.config['MYSQL_DB'] = ''
+app.config['MYSQL_HOST'] = 'localhost'
+app.config['MYSQL_USER'] = 'root'
+app.config['MYSQL_PASSWORD'] = 'leon1889'
+app.config['MYSQL_DB'] = 'api_flask'
 
 mysql = MySQL(app)
 
-# Get Customer
+# Get customer
 @app.route('/api/customers/<int:id>', methods=['GET'])
 @cross_origin()
 def get_customer(id):
@@ -40,7 +40,7 @@ def get_customer(id):
         
     return jsonify(content)
 
-# Get All Customers
+# Get all customers
 @app.route('/api/customers', methods=['GET'])
 @cross_origin()
 def get_all_customers():
@@ -76,7 +76,7 @@ def action():
     
     return 'Process carried out satisfactorily'
 
-# Save Customer
+# Save customer
 def save_customer():
     firstname = request.json['firstname']
     lastname = request.json['lastname']
@@ -96,7 +96,7 @@ def save_customer():
     except Exception:
         return 'Oops.. it seems there was an error'
 
-# Update Customer
+# Update customer
 def update_customer():
     firstname = request.json['firstname']
     lastname = request.json['lastname']
@@ -117,7 +117,7 @@ def update_customer():
     except Exception:
         return 'Oops.. it seems there was an error'
     
-# Delete Customer
+# Delete customer
 @app.route('/api/customers/<int:id>', methods=['DELETE'])
 @cross_origin()
 def delete_customer(id):
@@ -129,7 +129,7 @@ def delete_customer(id):
     except Exception:
         return 'Oops.. it seems there was an error'
 
-# Get Last Customer
+# Get first name and last name of the last registered customer
 @app.route('/api/customers/last-customer', methods=['GET'])
 @cross_origin()
 def get_last_customer():
@@ -142,18 +142,12 @@ def get_last_customer():
         content = {
             'id': row[0],
             'firstname': row[1],
-            'lastname': row[2],
-            'email': row[3],
-            'phone': row[4],
-            'passport': row[5],
-            'address': row[6],
-            'gender': row[7],
-            'state': row[8]
+            'lastname': row[2]
         }
         
     return jsonify(content)
 
-# Get Total Customers
+# Get the total number of customers
 @app.route('/api/customers/total', methods=['GET'])
 @cross_origin()
 def get_total_customers():
@@ -169,7 +163,7 @@ def get_total_customers():
         
     return jsonify(content)
 
-# Get active customers
+# Get number of active customers
 @app.route('/api/customers/active', methods=['GET'])
 @cross_origin()
 def get_active_customers():
@@ -185,7 +179,7 @@ def get_active_customers():
         
     return jsonify(content)
 
-# Get inactive customers
+# Get number of inactive customers
 @app.route('/api/customers/inactive', methods=['GET'])
 @cross_origin()
 def get_inactive_customers():
@@ -201,6 +195,56 @@ def get_inactive_customers():
         
     return jsonify(content)
 
+# Get active customers and filter them
+@app.route('/api/customers/search/active', methods=['GET'])
+@cross_origin()
+def filter_customers_active():
+    cursor = mysql.connection.cursor()
+    cursor.execute("SELECT * FROM customers WHERE state = 'Active'")
+    data = cursor.fetchall()
+    result = []
+    
+    for row in data:
+        content = {
+            'id': row[0],
+            'firstname': row[1],
+            'lastname': row[2],
+            'email': row[3],
+            'phone': row[4],
+            'passport': row[5],
+            'address': row[6],
+            'gender': row[7],
+            'state': row[8]
+        }
+        result.append(content)
+        
+    return jsonify(result)
+
+# Get inactive customers and filter them
+@app.route('/api/customers/search/inactive', methods=['GET'])
+@cross_origin()
+def filter_customers_inactive():
+    cursor = mysql.connection.cursor()
+    cursor.execute("SELECT * FROM customers WHERE state = 'Inactive'")
+    data = cursor.fetchall()
+    result = []
+    
+    for row in data:
+        content = {
+            'id': row[0],
+            'firstname': row[1],
+            'lastname': row[2],
+            'email': row[3],
+            'phone': row[4],
+            'passport': row[5],
+            'address': row[6],
+            'gender': row[7],
+            'state': row[8]
+        }
+        result.append(content)
+        
+    return jsonify(result)
+    
 # Index
 @app.route('/')
 @cross_origin()

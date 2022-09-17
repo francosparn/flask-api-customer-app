@@ -21,12 +21,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Lexend+Deca:wght@600&display=swap" rel="stylesheet">
 </head>
-<body">
-    
+<body>
     <!-- Navbar -->
     <nav class="navbar">
         <div class="container">
-            <span class="title navbar-brand text-light">
+            <span class="title navbar-brand text-light animate__animated animate__pulse">
               <img src="../static/img/logo.png" class="logo" alt="Logo" /> CMSoftware
             </span>
         </div>
@@ -69,7 +68,7 @@
                 <div class="card text-center">
                     <div class="card-header">
                         <h5>
-                          <img src="../static/img/up.png" alt="Up" /> Active Customers
+                          <img src="../static/img/up.png" alt="Active" /> Active Customers
                         </h5>
                     </div>
                     <div class="card-body">
@@ -81,7 +80,7 @@
               <div class="card text-center">
                   <div class="card-header">
                       <h5>
-                        <img src="../static/img/down.png" alt="Down" /> Inactive Customers
+                        <img src="../static/img/down.png" alt="Inactive" /> Inactive Customers
                       </h5>
                   </div>
                   <div class="card-body">
@@ -92,19 +91,12 @@
         </div>
     </div>
 
-    <!-- Button Add Customer -->
-    <div class="container mb-4">
-        <button type="button" id="btn-add" class="btn-add-customer" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          <img src="../static/img/add.png" class="add-icon" alt="Add" /> Add Customer
-        </button>
-    </div>
-
     <!-- Form Modal -->
     <div class="modal" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true" tabindex="-1">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">Add Customer</h4>
+              <h4 class="modal-title" id="modal-title-form">Add Customer</h4>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -142,7 +134,7 @@
                     <option value="Female">Female</option>
                     <option value="Male">Male</option>
                     <option value="Other">Other</option>
-                  </select>
+                </select>
               </div>
               <div class="mb-2">
                 <label class="form-label">State <strong class="text-danger">*</strong></label>
@@ -159,6 +151,30 @@
             </div>
           </div>
         </div>
+    </div>
+
+    <!-- Search Filter -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <!-- Button Add Customer -->
+          <button type="button" id="btn-add" class="btn-add-customer" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <img src="../static/img/add.png" class="add-icon" alt="Add" /> Add Customer
+          </button>
+          <!-- Button Export Excel -->
+          <button class="btn-export-excel mx-2" id="btn-export-excel">
+            <img src="../static/img/export.png" alt="Export" /> Export to Excel
+          </button>
+        </div>
+        <div class="col-md-3 mb-3">
+          <select class="form-select" id="stateFilter" aria-label="Default select example">
+            <option selected disabled>Order by</option>
+            <option value="All">All Customers</option>
+            <option value="Active">Active</option>
+            <option value="Inactive">Inactive</option>
+          </select>
+        </div>
+      </div>
     </div>
 
     <!-- Table -->
@@ -178,9 +194,13 @@
                 <th scope="col">Actions</th> 
               </tr>
             </thead>
-            <tbody></tbody>
+            <tbody>
+            </tbody>
           </table>
     </section>
+
+    <!-- Not Result -->
+    <div id="not-result"></div>
 
     <!-- Footer -->
     <footer class="my-5">
@@ -201,6 +221,27 @@
     
     <!-- Scripts -->
     <script src="../static/js/app.js"></script>
+    <script src="../static/js/searchCustomers.js"></script>
+    <script src="../static/js/showTotalCustomers.js"></script>
+    <script src="../static/js/showLastCustomer.js"></script>
+    <script src="../static/js/showActiveCustomers.js"></script>
+    <script src="../static/js/showInactiveCustomers.js"></script>
+    <script src="../static/js/searchCustomers.js"></script>
+    <script src="../static/js/saveCustomer.js"></script>
+    <script src="../static/js/viewCustomer.js"></script>
+    <script src="../static/js/editCustomer.js"></script>
+    <script src="../static/js/deleteCustomer.js"></script>
+    <script src="../static/js/customerFilter.js"></script>
+    <script src="../static/js/filterActiveCustomers.js"></script>
+    <script src="../static/js/filterInactiveCustomers.js"></script>
+    <script src="../static/js/resetForm.js"></script>
+    <script src="../static/js/structureHTML.js"></script>
+    <script src="../static/js/refreshPage.js"></script>
+    <script src="../static/js/questionDeleteCustomer.js"></script>
+    <script src="../static/js/notResultMessage.js"></script>
+    <script src="../static/js/errorAlert.js"></script>
+    <script src="../static/js/exportExcel.js"></script>
+    <script src="../static/js/tableToExcel.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>

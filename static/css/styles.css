@@ -1,7 +1,7 @@
 /* General */
 :root{
-    --main-color: #5c6bc0;
-    --main-color-hover: #26418f;
+    --main-color: #5a67af;
+    --main-color-hover: #404c8d;
 }
 
 *{
@@ -27,6 +27,7 @@ label{
     font-weight: 600;
     font-family: 'Lexend Deca', sans-serif;
     font-size: 26px !important;
+    cursor: pointer;
 }
 
 .logo{
@@ -43,6 +44,10 @@ label{
 }
 
 /* Cards */
+.card{
+    border: 1px solid rgb(241, 241, 241) !important;
+}
+
 .card-header{
     background-color: var(--main-color) !important;
 }
@@ -50,6 +55,9 @@ label{
 .card h5{
     font-weight: 600;
     color: #FFF;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-top: 5px;
 }
 
 .total-customers,
@@ -58,6 +66,34 @@ label{
 .inactive-customers{
     font-weight: 600;
     font-size: 18px;
+}
+
+/* Alert Not Result */
+.not_result_message{
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Filter */
+.form-select{
+    border: 1px solid rgb(241, 241, 241) !important;
+}
+
+/* Button Export */
+.btn-export-excel{
+    background-color: rgb(13, 129, 104);
+    color: #FFF;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.btn-export-excel:hover{
+    background-color: rgb(12, 100, 81);
+    transition: .5s all ease;
 }
 
 /* Table */
@@ -75,7 +111,7 @@ tbody{
 }
 
 .state{
-    background-color: #26418f;
+    background-color: var(--main-color);
     color: #FFF;
     font-size: 13px;
     font-weight: 700;
@@ -85,7 +121,7 @@ tbody{
 }
 
 .state:hover{
-    background-color:#1b3277;
+    background-color: var(--main-color-hover);
     transition: .5s all ease;
 }
 
@@ -100,6 +136,7 @@ tbody{
     border: none;
     font-weight: 600;
     text-decoration: none;
+    margin-bottom: 20px;
 }
 
 .btn-add-customer:hover,
@@ -118,8 +155,8 @@ tbody{
 .btn-edit,
 .btn-delete{
     text-decoration: none;
-    background-color: rgb(247, 247, 247);
-    border: 1px solid rgb(196, 196, 196);
+    background-color: #fff;
+    border: 1px solid rgb(231, 231, 231);
     border-radius: 5px;
     padding: 4px 8px 4px 8px;
     margin-right: 5px;
@@ -129,7 +166,7 @@ tbody{
 .btn-edit:hover,
 .btn-delete:hover{
     color: #FFF;
-    background-color: rgb(223, 223, 223);
+    background-color: rgb(236, 236, 236);
     transition: .5s all ease;
 }
 
@@ -137,4 +174,9 @@ tbody{
 .author{
     text-decoration: none;
     font-weight: 600;
+}
+
+/* Info Customer */
+.customer-info label{
+    text-transform: uppercase;
 }
