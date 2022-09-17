@@ -14,7 +14,7 @@
 - Basic form validations.
 - Personalized alerts on the status of a customer.
 - Custom alert messages for customer creation, deletion and editing.
-- Customers table export to Excel.
+- Export customers to Excel table.
 
 It uses a **REST API** developed in **Python** with the **Flask** framework.
 
@@ -28,7 +28,7 @@ For the alerts, the **[SweetAlert2](https://sweetalert2.github.io/)** library wa
 
 For the animations, the **[Animate.css](https://animate.style/)** library was used.
 
-To export customers data to Excel, a library called **[Table2Excel](https://github.com/rusty1s/table2excel)** was used.
+To export customers data to Excel, a library called **[Table-To-Excel](https://github.com/linways/table-to-excel)** was used.
 
 # Preview
 
