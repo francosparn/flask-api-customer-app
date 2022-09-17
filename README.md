@@ -34,20 +34,20 @@ To export customers data to Excel, a library called **[Table-To-Excel](https://g
 
 **Index**
 
-![](https://i.imgur.com/VElyLK4.png)
+![](https://i.imgur.com/3Q9nH0g.png)
 
 **Customer creation form**
 
-![](https://i.imgur.com/8Er7exl.png)
+![](https://i.imgur.com/3iAWAIH.png)
 
 **Customer edition form**
 
-![](https://i.imgur.com/BqHv2AE.png)
+![](https://i.imgur.com/HkKLSTq.png)
 
 **Customer Profile View Screen**
 
-![](https://i.imgur.com/UOySu7v.png)
+![](https://i.imgur.com/gIBtLWX.png)
 
-**Search filter by state**
+**Customer filter by state**
 
-![](https://i.imgur.com/ZQJ6Alt.png)
+![](https://i.imgur.com/AVi2vg3.png)
