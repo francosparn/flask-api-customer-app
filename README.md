@@ -44,7 +44,7 @@ To export customers data to Excel, a library called **[Table-To-Excel](https://g
 
 ![](https://i.imgur.com/HkKLSTq.png)
 
-**Customer Profile View Screen**
+**Customer profile view screen**
 
 ![](https://i.imgur.com/gIBtLWX.png)
 
